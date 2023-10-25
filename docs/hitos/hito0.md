@@ -20,12 +20,11 @@ Algunas características que tendrá este juego serán las siguientes:
 - Dependiendo como juegue tu equipo virtual en la vida real, ganarás más o menos puntos que te permitirán ascender o descender en la tabla de clasificación.
 
 ### Competencia
-
 Actualmente hay varias aplicaciones/juegos que son similares a este desarrollo que se propone:
-* LaLiga Fantasy
-* Mister Fantasy
-* FutbolFantasy
-* Biwenger
+* [LaLiga Fantasy](https://laligafantasy.relevo.com/)
+* [Mister Fantasy](https://misterfantasy.es/es/)
+* [FutbolFantasy](https://www.futbolfantasy.com/)
+* [Biwenger](https://biwenger.as.com/login)
 
 Estas aplicaciones tienen una serie de carencias que dificultan la experiencia de usuario, por ejemplo, exceso de publicidad, errores inoportunos, falta de feedback, etc. Por tanto, el objetivo de RoyalFantasy es potenciar estos aspectos en los que fallan las otras aplicaciones para que los usuarios elijan RoyalFantasy ante otras ya consolidadas en el mercado.
 
