@@ -17,6 +17,10 @@ Algunas características que tendrá este juego serán las siguientes:
 - Al entrar en una liga, a cada usuario se le generará un equipo aleatorio con un valor de 50M. Este dinero estará distribuido en 15 jugadores y en el presupuesto inicial.
 - Cada usuario debe formar una plantilla titular antes del inicio de cada jornada.
 
+### Nombre y Logo del proyecto
+![Logo](../imgs/Royal_Fantasy-nombre.png)
+![Sin Fondo](../imgs/Royal_Fantasy-removebg.png)
+
 ## Documentación adicional
 En cuanto a la documentación adicional disponible acerca de este hito:
 - [Configuración entorno de trabajo]()
