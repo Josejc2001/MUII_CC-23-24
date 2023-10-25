@@ -3,8 +3,8 @@
 
 ## Contenidos
 Los contenidos de este hito serán los siguientes:
-- [Descripción del proyecto]()
-- [Documentación adicional]()
+- [Descripción del proyecto](#descripción-del-proyecto)
+- [Documentación adicional](#documentación-adicional)
 
 ## Descripción del proyecto
 ### Descripción del problema
@@ -19,7 +19,6 @@ Algunas características que tendrá este juego serán las siguientes:
 
 ### Nombre y Logo del proyecto
 ![Logo](../imgs/Royal_Fantasy-nombre.png)
-![Sin Fondo](../imgs/Royal_Fantasy-removebg.png)
 
 ## Documentación adicional
 En cuanto a la documentación adicional disponible acerca de este hito:
