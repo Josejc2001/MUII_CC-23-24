@@ -14,12 +14,14 @@ $ git clone https://github.com/Josejc2001/MUII_CC-23-23
 ```
 ### 2. Configuración perfil personal GitHub
 En cuanto a la configuración del perfil, se ha creado una Overview que permite a los usuarios que visiten mi perfil y conozcan más acerca de mi.
+
 [!profile](../imgs/config-profile-1.png)
 
 Para comprobar la correcta asociación de un nombre y correo electrónico en nuestra cuenta, vamos a ejecutar el siguiente comando en la consola.
 ```
 $ git config --list
 ```
+
 [!nameandemail](../imgs/config-profile-2.png)
 
 ### 3. Creación de claves SSH
