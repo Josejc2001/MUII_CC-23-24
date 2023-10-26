@@ -4,9 +4,9 @@
 
 ## Royal Fantasy :soccer: :crown:
 
-<div align="center">![logo](./docs/imgs/Royal_Fantasy-nombre.png)</div>
+![logo](./docs/imgs/Royal_Fantasy-nombre.png)
 
 ### Hito 0. Descripción del problema a resolver usando correctamente git y Github
-- [Descripción del problema](../MUII_CC-23-24/docs/hitos/hito0.md)
-- [Configuración del entorno de trabajo](../MUII_CC-23-24/docs/hitos/config-github.md)
-- [Licencia](../MUII_CC-23-24/LICENSE)
+- [Descripción del problema](docs/hitos/hito0.md)
+- [Configuración del entorno de trabajo](docs/hitos/config-github.md)
+- [Licencia](LICENSE)
