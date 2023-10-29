@@ -6,7 +6,7 @@ Los contenidos de este hito serán los siguientes:
 - [Historias de usuario](#historias-de-usuario)
 - [Milestones](#milestones)
 - [Instalación](#instalación)
-- [Justificación de lenguajes y frameworks](#justificación-de-lenguajes-y-frameworks)
+- [Justificación de lenguajes, frameworks y arquitectura](#justificación-de-lenguajes-frameworks-y-arquitectura)
 
 ## Historias de usuario
 
@@ -29,4 +29,25 @@ Una vez importado el proyecto, el IDE nos identificará Maven, que es el gestor 
 
 ![Project Imported](../imgs/project-imported.png)
 
-## Justificación de lenguajes y frameworks
+## Justificación de lenguajes, frameworks y arquitectura
+En este apartado se va a justificar la elección de cada lenguaje, framework y arquitectura general del sistema.
+
+### Justificación de lenguajes
+En primer lugar, los lenguajes que vamos a utilizar para el desarrollo de este sistema son Java y TypeScript, de forma respectiva para el back-end y el front-end.
+
+La utilización de Java como lenguaje para la implementación del back-end viene dada por ser el lenguaje más usado y popular actualmente. Hay una serie de características fundamentales que le hacen consagrarse en la cúspide:
+
+- **Simplicidad:** Su forma de codificar es limpia y de fácil entendimiento.
+- **Compilado e interpretado:** Ofrece el poder de los lenguajes compilados junto con la
+flexibilidad que aportan los interpretados.
+- **Orientado a objetos:** Facilita la reutilización de código.
+- **Robusto:** Un gran manejo de errores en tiempo de ejecución y de las excepciones.
+
+Debido a estas características y a la versatilidad que ofrece para realizar cualquier tipo de aplicación, es la principal herramienta a utilizar para el desarrollo de este proyecto.
+
+Para el desarrollo de la parte frontal del sistema, vamos a utilizar TypeScript. Este lenguaje está construido a un nivel superior de JavaScript. Por tanto ofrece una serie de características adicionales que lo hace más limpio y sólido. El uso de este lenguaje también nos permitirá hacer un código seguro, escalable.
+
+### Justificación de frameworks
+
+
+### Arquitectura 
