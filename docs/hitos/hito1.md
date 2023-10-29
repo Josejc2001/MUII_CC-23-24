@@ -13,7 +13,7 @@ Los contenidos de este hito serán los siguientes:
 ## Milestones
 
 ## Instalación
-En primer lugar para llevar a cabo la instalación, hay que dirigirse a la página de [Spring Initializr](#https://start.spring.io/), la cual nos permitirá generar la estructura inicial de nuestro proyecto.
+En primer lugar para llevar a cabo la instalación, hay que dirigirse a la página de [Spring Initializr](https://start.spring.io/), la cual nos permitirá generar la estructura inicial de nuestro proyecto.
 
 ![Creating project](../imgs/creating-project.png)
 
@@ -26,6 +26,7 @@ A continuación, abrimos/descargamos el IDE que vayamos a utilizar e importamos 
 ![Importing project](../imgs/importing-project.png)
 
 Una vez importado el proyecto, el IDE nos identificará Maven, que es el gestor de paquetes que vamos a utilizar, e instalará todas las dependencias necesarias para la ejecución del proyecto. También añadirá un Servidor Tomcat para lanzar la aplicación y debemos asegurarnos que el JDK es el correcto para evitar errores.
+
 ![Project Imported](../imgs/project-imported.png)
 
 ## Justificación de lenguajes y frameworks
