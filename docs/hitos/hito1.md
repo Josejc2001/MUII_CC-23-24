@@ -6,7 +6,8 @@ Los contenidos de este hito serán los siguientes:
 - [Historias de usuario](#historias-de-usuario)
 - [Milestones](#milestones)
 - [Instalación](#instalación)
-- [Justificación de lenguajes, frameworks y arquitectura](#justificación-de-lenguajes-frameworks-y-arquitectura)
+- [Justificación de lenguajes, frameworks y arquitectura](#justificación-de-lenguajes-y-frameworks)
+- [Arquitecturas](#arquitecturas)
 
 ## Historias de usuario
 
@@ -29,11 +30,11 @@ Una vez importado el proyecto, el IDE nos identificará Maven, que es el gestor 
 
 ![Project Imported](../imgs/project-imported.png)
 
-## Justificación de lenguajes, frameworks y arquitectura
+## Justificación de lenguajes y frameworks
 En este apartado se va a justificar la elección de cada lenguaje, framework y arquitectura general del sistema.
 
 ### Justificación de lenguajes
-En primer lugar, los lenguajes que vamos a utilizar para el desarrollo de este sistema son Java y TypeScript, de forma respectiva para el back-end y el front-end.
+En primer lugar, los lenguajes que vamos a utilizar para el desarrollo de este sistema son [Java](https://www.java.com/es/) y [TypeScript](https://www.typescriptlang.org/), de forma respectiva para el back-end y el front-end.
 
 La utilización de Java como lenguaje para la implementación del back-end viene dada por ser el lenguaje más usado y popular actualmente. Hay una serie de características fundamentales que le hacen consagrarse en la cúspide:
 
@@ -48,6 +49,15 @@ Debido a estas características y a la versatilidad que ofrece para realizar cua
 Para el desarrollo de la parte frontal del sistema, vamos a utilizar TypeScript. Este lenguaje está construido a un nivel superior de JavaScript. Por tanto ofrece una serie de características adicionales que lo hace más limpio y sólido. El uso de este lenguaje también nos permitirá hacer un código seguro, escalable.
 
 ### Justificación de frameworks
+En cuanto a los frameworks que vamos a utilizar para el desarrollo de Royal Fantasy, tenemos [Spring](https://spring.io/) para la implementación del backend junto con el lenguaje Java, anteriormente mencionado, y [Angular](https://angular.io/) para el desarrollo del front-end.
 
+Con respecto a Spring, es un framework desarrollado para el trabajo con Java como lenguaje de programación. Está en pleno crecimiento de popularidad ya que hay muchos desarrolladores que lo usan para el backend de sus proyectos. Además es una herramienta que busca que los programadores se centren más en el propio código que en cualquier paso de configuración y/o despliegue.
 
-### Arquitectura 
+En cuanto a la configuración, ofrece la posibilidad de definir las necesidades del proyecto que quieres realizar durante el proceso de inicialización, mediante las dependencias de iniciador también llamadas Spring Starters.
+
+Junto con la facilidad de configuración y que está basado en Java, se convierte en la herramienta ideal para implementar el back-end de este sistema.
+
+Por otro lado, Angular junto con el lenguaje en el que se basa, TypeScript, ofrecen un rápido y eficiente proceso de desarrollo, compatibilidad de navegadores y sistemas
+operativos y modularidad.
+
+Además, es un sistema que posee enlace bidireccional de datos, directivas, pruebas junto con un futuro próspero, debido a su funcionalidad y popularidad.
