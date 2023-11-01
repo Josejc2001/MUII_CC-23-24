@@ -10,6 +10,12 @@ Los contenidos de este hito serán los siguientes:
 - [Arquitecturas](#arquitecturas)
 
 ## Historias de usuario
+A continuación, se detallan las historias de usuario definidas:
+- [HU-1. Organizador de jugadores ](https://github.com/Josejc2001/MUII_CC-23-24/issues/1)
+- [HU-2. Gestor de ligas ](https://github.com/Josejc2001/MUII_CC-23-24/issues/2)
+- [HU-3. Visualización de plantilla ](https://github.com/Josejc2001/MUII_CC-23-24/issues/3)
+- [HU-4. Autenticación de usuarios](https://github.com/Josejc2001/MUII_CC-23-24/issues/4)
+- [HU-5. Seguimiento de clasificación](https://github.com/Josejc2001/MUII_CC-23-24/issues/5)
 
 ## Milestones
 
