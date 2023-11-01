@@ -18,6 +18,13 @@ A continuación, se detallan las historias de usuario definidas:
 - [HU-5. Seguimiento de clasificación](https://github.com/Josejc2001/MUII_CC-23-24/issues/5)
 
 ## Milestones
+El proyecto se ha planificado mediante el establecimiento de los siguientes milestones o hitos:
+- [Hito 1: Definición y creación del proyecto](https://github.com/Josejc2001/MUII_CC-23-24/milestone/1)
+- [Hito 2: Gestión de jugadores](https://github.com/Josejc2001/MUII_CC-23-24/milestone/2)
+- [Hito 3: Gestión de ligas](https://github.com/Josejc2001/MUII_CC-23-24/milestone/3)
+- [Hito 4: Identificación de los usuarios](https://github.com/Josejc2001/MUII_CC-23-24/milestone/4)
+- [Hito 5: Evolución de la clasificación](https://github.com/Josejc2001/MUII_CC-23-24/milestone/5)
+- [Hito 6: Seguimiento noticias del mundo del fútbol](https://github.com/Josejc2001/MUII_CC-23-24/milestone/6)
 
 ## Instalación
 En primer lugar para llevar a cabo la instalación, hay que dirigirse a la página de [Spring Initializr](https://start.spring.io/), la cual nos permitirá generar la estructura inicial de nuestro proyecto.
