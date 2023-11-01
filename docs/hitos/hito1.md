@@ -6,7 +6,7 @@ Los contenidos de este hito serán los siguientes:
 - [Historias de usuario](#historias-de-usuario)
 - [Milestones](#milestones)
 - [Instalación](#instalación)
-- [Justificación de lenguajes, frameworks y arquitectura](#justificación-de-lenguajes-y-frameworks)
+- [Justificación de lenguajes y frameworks](#justificación-de-lenguajes-y-frameworks)
 - [Arquitecturas](#arquitecturas)
 
 ## Historias de usuario
