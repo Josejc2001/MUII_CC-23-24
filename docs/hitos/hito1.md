@@ -80,7 +80,20 @@ A continuación, se muestra un diagrama que representa los puertos y adaptadores
 
 Como se puede apreciar en el diagrama hexagonal, tenemos tres capas claramente
 diferenciadas:
+
 - **Capa de dominio:** Es la capa central del hexágono y su función es alojar la lógica de negocio. En ella se encuentran los modelos de datos y sus restricciones. Esta capa es independiente del resto de capas y de las tecnologías utilizadas. Su forma de comunicación es a través de las interfaces definidas en ella.
 - **Capa de aplicación:** Por encima de la capa de dominio se encuentra la capa de aplicación, en la cual se encuentra la lógica de la aplicación. Se coordinan las acciones y los servicios del dominio con el objetivo de cumplir con casos de uso específicos.
 - **Capa de infraestructura:** Es la capa más exterior del hexágono y es en la que se hallan las implementaciones o adaptaciones de los puertos de las demás capas. Los adaptadores son los encargados de conectar la lógica de negocio y de la aplicación con los servicios externos a nuestra aplicación. En el caso de mi implementación, aquí se encuentran el servicio REST, la base de datos y algunos archivos de configuración que permiten el correcto funcionamiento de los frameworks.
 - **Capa de puertos:** Como ya se ha mencionado anteriormente, esta capa define las interfaces a través de las cuáles el sistema se comunica con el exterior.
+
+> Este resumen de la arquitectura hexagonal ha sido previamente mencionado en mi TFG: Sistema de Control de Autoridades en datos bibliométricos.
+
+### Arquitectura MVC
+Angular, el framework que utilizaremos para la implementación del front-end, utiliza la **Arquitectura MVC** o también conocida como Arquitectura Modelo-Vista-Controlador. Esta arquitectura es muy utilizada para el desarrollo de aplicaciones web y consta de las siguientes partes:
+
+- **Modelo:** Parte donde se encuentra la lógica de negocio de la aplicación, es decir, las reglas de negocio que determinan como la información va a ser creada, almacenada o modificada.
+- **Vista:** Esta parte contiene la visualización de la interfaz de usuario. Requiere de la información que ofrece el modelo para expresarla como salida.
+- **Controlador:** Controla y decide como se deben mostrar los datos, haciendo de intermediario entre el modelo y la vista.
+
+![MVC](../imgs/mvc.png)
+> La imagen ha sido extraida de la siguiente página: https://www.linkedin.com/pulse/modelo-vista-controlador-precognis/?originalSubdomain=es
