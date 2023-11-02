@@ -7,6 +7,7 @@
 ![logo](./docs/imgs/Royal_Fantasy-nombre.png)
 
 ### Hito 0. Descripción del problema a resolver usando correctamente git y Github :pushpin::gear:
-- [Descripción del problema](docs/hitos/hito0.md)
-- [Configuración del entorno de trabajo](docs/hitos/config-github.md)
-- [Licencia](LICENSE)
+En el siguiente enlace se puede acceder al [Hito 0](/docs/hitos/hito0.md) en el cual se lleva a cabo la configuración de git y GitHub junto con la descripción inicial del problema.
+
+### Hito 1: Concretando y planificando el proyecto :pushpin::clipboard:
+En el siguiente enlace se puede acceder al [Hito 1](/docs/hitos/hito1.md) en el cual se definen las historias de usuario y los milestones, se realiza la instalación del software necesario y se establece la estructura inicial de clases.
