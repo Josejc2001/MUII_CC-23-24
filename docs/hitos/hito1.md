@@ -1,5 +1,5 @@
 # Hito 1 :pushpin:
-> Versión 0.0.1
+> Versión 1.0.0
 
 ## Contenidos
 Los contenidos de este hito serán los siguientes:
