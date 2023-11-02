@@ -115,4 +115,4 @@ Angular, el framework que utilizaremos para la implementación del front-end, ut
 ## Estructura Inicial
 En este apartado, se explica la estructura inicial de clases del proyecto:
 - **Jugador:** Esta [clase](../../backend/src/main/java/com/royalfantasy/backend/domain/model/Player.java) guarda la información relativa a un futbolista en concreto, junto con sus funcionalidades. La explicación de cada atributo a continuación:
-* Hola
+    - Id:
