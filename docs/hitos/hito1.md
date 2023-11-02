@@ -115,4 +115,12 @@ Angular, el framework que utilizaremos para la implementación del front-end, ut
 ## Estructura Inicial
 En este apartado, se explica la estructura inicial de clases del proyecto:
 - **Jugador:** Esta [clase](../../backend/src/main/java/com/royalfantasy/backend/domain/model/Player.java) guarda la información relativa a un futbolista en concreto, junto con sus funcionalidades. La explicación de cada atributo a continuación:
-    - Id:
+    - *Id:* Identificador único de jugador. Permite identificar unívocamente los jugadores del sistema.
+    - *Nombre:* Nombre del jugador.
+    - *Posición:* Posición que ocupa en el terreno de juego el jugador.
+    - *Edad:* Edad del jugador.
+    - *Altura:* Altura del jugador (en metros).
+    - *Peso:* Peso del jugador (en kilogramos).
+    - *Valor:* Valor de mercado del jugador (en millones).
+    - *Cláusula*: Cláusula de rescisión del jugador (en millones).
+    - *Puntos*: Puntos que lleva el jugador.
