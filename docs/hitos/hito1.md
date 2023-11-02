@@ -8,6 +8,7 @@ Los contenidos de este hito serán los siguientes:
 - [Instalación](#instalación)
 - [Justificación de lenguajes y frameworks](#justificación-de-lenguajes-y-frameworks)
 - [Arquitecturas](#arquitecturas)
+- [Estructura Inicial](#estructura-inicial)
 
 ## Historias de usuario
 A continuación, se detallan las historias de usuario definidas:
@@ -110,3 +111,8 @@ Angular, el framework que utilizaremos para la implementación del front-end, ut
 
 ![MVC](../imgs/mvc.png)
 > La imagen ha sido extraida de la siguiente página: https://www.linkedin.com/pulse/modelo-vista-controlador-precognis/?originalSubdomain=es
+
+## Estructura Inicial
+En este apartado, se explica la estructura inicial de clases del proyecto:
+- **Jugador:** Esta [clase](../../backend/src/main/java/com/royalfantasy/backend/domain/model/Player.java) guarda la información relativa a un futbolista en concreto, junto con sus funcionalidades. La explicación de cada atributo a continuación:
+* Hola
