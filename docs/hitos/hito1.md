@@ -28,7 +28,7 @@ El proyecto se ha planificado mediante el establecimiento de los siguientes mile
 - [Hito 6: Seguimiento noticias del mundo del fútbol](https://github.com/Josejc2001/MUII_CC-23-24/milestone/6)
 
 ## Instalación
-En primer lugar para llevar a cabo la instalación, hay que dirigirse a la página de [Spring Initializr](https://start.spring.io/), la cual nos permitirá generar la estructura inicial de nuestro proyecto.
+En primer lugar para llevar a cabo la instalación, hay que dirigirse a la página de [Spring Initializr](https://start.spring.io/), la cual nos permitirá generar la estructura inicial de nuestro proyecto del lado del servidor (back-end).
 
 ![Creating project](../imgs/creating-project.png)
 
@@ -43,6 +43,22 @@ A continuación, abrimos/descargamos el IDE que vayamos a utilizar e importamos 
 Una vez importado el proyecto, el IDE nos identificará Maven, que es el gestor de paquetes que vamos a utilizar, e instalará todas las dependencias necesarias para la ejecución del proyecto. También añadirá un Servidor Tomcat para lanzar la aplicación y debemos asegurarnos que el JDK es el correcto para evitar errores.
 
 ![Project Imported](../imgs/project-imported.png)
+
+A continuación, vamos a llevar a cabo la instalación de todo el software necesario para la implementación del front-end del sistema.
+
+Para comenzar, necesitaremos tener instalado [Node.js](https://nodejs.org/en). En esta página, se puede descargar de forma sencilla.
+
+Una vez descargado, pasamos a la instalación de [Angular CLI](https://angular.io/guide/setup-local) para crear los proyectos, generar aplicaciones y librerias de código. Será necesario introducir el siguiente comando para realizar la instalación.
+```
+npm install -g @angular/cli
+```
+Solo queda crear nuestro proyecto introduciendo el siguiente comando.
+```
+ng new frontend
+```
+Si el proceso de instalación ha ido como se esperaba, debemos tener en nuestro IDE la siguiente estructura de carpetas.
+
+![Project Imported Frontend](../imgs/project-imported-frontent.png)
 
 ## Justificación de lenguajes y frameworks
 En este apartado se va a justificar la elección de cada lenguaje, framework y arquitectura general del sistema.
