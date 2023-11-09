@@ -34,5 +34,5 @@ TDD o Test Driven Development es una práctica de programación que trata de com
 El objetivo de seguir esta metodología o técnica en este proyecto es conseguir un código más robusto, mejorando su calidad, así como obtener un desarrollo software modular y con facilidad de incluir nuevas funcionalidades al código.
 
 ![TDD](../imgs/tdd.png)
-> La imagen ha sido extraida de la siguiente página: https://www.contino.io/insights/test-driven-development
+> La imagen ha sido extraida de la siguiente página: https://www.linkedin.com/pulse/tdd-vs-bdd-atdd-servicios-de-informatica-profesion/?originalSubdomain=es
 
