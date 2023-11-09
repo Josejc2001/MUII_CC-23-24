@@ -29,4 +29,10 @@ $ npm run test
 ```
 
 ### Metodología TDD
+TDD o Test Driven Development es una práctica de programación que trata de comenzar escribiendo las pruebas en primer lugar, posteriormente escribir el código fuente, pasar la prueba correctamente y terminar con la refactorización del código escrito.
+
+El objetivo de seguir esta metodología o técnica en este proyecto es conseguir un código más robusto, mejorando su calidad, así como obtener un desarrollo software modular y con facilidad de incluir nuevas funcionalidades al código.
+
+![TDD](../imgs/tdd.png)
+> La imagen ha sido extraida de la siguiente página: https://www.contino.io/insights/test-driven-development
 
