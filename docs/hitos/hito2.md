@@ -19,7 +19,14 @@ $ mvn test
 ```
 
 ### NPM
+NPM significa Node Package Manager o Gestor de Paquetes de Node. Es una herramienta que te permite instalar, actualizar y administrar fácilmente los paquetes de Node.js.
 
+Se va a utilizar npm ya que permite instalar todos los paquetes necesarios para nuestro framework Angular, que se va a utilizar para la implementación del front-end.
+
+El archivo package.json es crucial ya que contiene los metadatos y las dependencias de tu proyecto. Por ejemplo, nos permite ajustar y lanzar los test utilizando el siguiente comando:
+```
+$ npm run test
+```
 
 ### Metodología TDD
 
