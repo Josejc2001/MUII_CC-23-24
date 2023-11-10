@@ -1,11 +1,7 @@
 package com.royalfantasy.backend.domain.model;
 
-import org.bson.types.ObjectId;
-import org.springframework.data.annotation.Id;
-
 public class Player {
-    @Id
-    private ObjectId id;
+    private Long id;
     private String name;
     private String position;
     private String age;
@@ -14,16 +10,28 @@ public class Player {
     private Integer value;
     private Integer clause;
     private Integer points;
-    // Team
-    // Img
+    private String team;
     public Player() {
     }
 
-    public ObjectId getId() {
+    public Player(Long id, String name, String position, String age, Double height, Double weight, Integer value, Integer clause, Integer points, String team) {
+        this.id = id;
+        this.name = name;
+        this.position = position;
+        this.age = age;
+        this.height = height;
+        this.weight = weight;
+        this.value = value;
+        this.clause = clause;
+        this.points = points;
+        this.team = team;
+    }
+
+    public Long getId() {
         return id;
     }
 
-    public void setId(ObjectId id) {
+    public void setId(Long id) {
         this.id = id;
     }
 
