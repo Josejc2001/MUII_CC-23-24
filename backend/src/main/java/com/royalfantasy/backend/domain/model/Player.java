@@ -4,7 +4,7 @@ public class Player {
     private Long id;
     private String name;
     private String position;
-    private String age;
+    private Integer age;
     private Double height;
     private Double weight;
     private Integer value;
@@ -14,7 +14,7 @@ public class Player {
     public Player() {
     }
 
-    public Player(Long id, String name, String position, String age, Double height, Double weight, Integer value, Integer clause, Integer points, String team) {
+    public Player(Long id, String name, String position, Integer age, Double height, Double weight, Integer value, Integer clause, Integer points, String team) {
         this.id = id;
         this.name = name;
         this.position = position;
@@ -51,11 +51,11 @@ public class Player {
         this.position = position;
     }
 
-    public String getAge() {
+    public Integer getAge() {
         return age;
     }
 
-    public void setAge(String age) {
+    public void setAge(Integer age) {
         this.age = age;
     }
 
@@ -97,5 +97,13 @@ public class Player {
 
     public void setPoints(Integer points) {
         this.points = points;
+    }
+
+    public String getTeam() {
+        return team;
+    }
+
+    public void setTeam(String team) {
+        this.team = team;
     }
 }
