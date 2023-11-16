@@ -4,6 +4,8 @@
 ## Contenidos
 Los contenidos de este hito serán los siguientes:
 - [Gestores de tareas](#gestores-de-tareas)
+- [Marcos de pruebas](#marcos-de-pruebas)
+- [Bibliotecas de aserciones](#bibliotecas-de-aserciones)
 
 ## Gestores de tareas
 Para llevar a cabo la realización de este proyecto, se escogerá [Maven](https://maven.apache.org/) como gestor de tareas del backend y [NPM](https://www.npmjs.com/) como gestor de tareas del frontend. Estos gestores de tareas han sido escogidos por su facilidad de uso y su integración en los frameworks utilizados.
@@ -35,4 +37,19 @@ El objetivo de seguir esta metodología o técnica en este proyecto es conseguir
 
 ![TDD](../imgs/tdd.png)
 > La imagen ha sido extraida de la siguiente página: https://rubentejera.com/algoritmo-tdd/
+
+
+## Marcos de pruebas
+A continuación, se explica la elección del framework [JUnit](https://junit.org/junit5/) para la automatización de pruebas del backend y del framework [Cypress](https://www.cypress.io/) para el testeo del frontend.
+
+### JUnit
+Como ya se ha mencionado anteriormente, JUnit será el marco de pruebas que utilizaremos en el backend. Este framework permite la ejecución de clases de manera controlada, para probar así el correcto funcionamiento de los métodos implementados.
+
+Además, JUnit dispone de distintas funcionalidades para realizar tanto pruebas unitarias como pruebas de integración. Por esto, y la fácil integración con Spring he decidido utilizar este framework de pruebas.
+
+### Cypress
+
+
+## Bibliotecas de aserciones
+
 
