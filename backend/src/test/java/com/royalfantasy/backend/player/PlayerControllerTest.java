@@ -28,7 +28,7 @@ public class PlayerControllerTest {
 
     @Test
     public void test_getPlayer() throws Exception{
-        mockMvc.perform(MockMvcRequestBuilders.get("/api/players/{playerId}", "1")
+        mockMvc.perform(MockMvcRequestBuilders.get("/api/players/{playerId}", "7")
                         .contentType(MediaType.APPLICATION_JSON))
                 .andExpect(MockMvcResultMatchers.status().isOk())
                 .andExpect(MockMvcResultMatchers
@@ -47,7 +47,7 @@ public class PlayerControllerTest {
 
     @Test
     public void test_updatePlayer() throws Exception{
-        mockMvc.perform(MockMvcRequestBuilders.patch("/api/players/{playerId}", "2")
+        mockMvc.perform(MockMvcRequestBuilders.patch("/api/players/{playerId}", "6")
                         .content("{ \"name\": \"Player test updated\"}")
                         .contentType(MediaType.APPLICATION_JSON))
                 .andExpect(MockMvcResultMatchers.status().isOk())
@@ -58,7 +58,7 @@ public class PlayerControllerTest {
 
     @Test
     public void test_deleteProject() throws Exception{
-        mockMvc.perform(MockMvcRequestBuilders.delete("/api/players/{playerId}", "3")
+        mockMvc.perform(MockMvcRequestBuilders.delete("/api/players/{playerId}", "6")
                         .contentType(MediaType.APPLICATION_JSON))
                 .andExpect(MockMvcResultMatchers.status().isNoContent());
     }
