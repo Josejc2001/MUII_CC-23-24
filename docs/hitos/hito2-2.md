@@ -1,11 +1,11 @@
-# Configuración de Spring y Maven para testing
-## Dependencias en el pom.xml
+## Configuración de Spring y Maven para testing :gear:
+### Dependencias en el pom.xml
 Para implementar un correcto entorno de testeo, es necesario añadir las dependencias que se observan en la siguiente imagen.
 
 ![dependencias-maven](../imgs/dependecias-test.png)
 > Estas dependencias se pueden encontrar en el repositorio de maven: https://mvnrepository.com/
 
-## Maven test
+### Maven test
 Nuestro IDE dispone de un plugin que permite la automatización de test con maven a la perfección.
 
 ![maven-test](../imgs/maven-test.png)

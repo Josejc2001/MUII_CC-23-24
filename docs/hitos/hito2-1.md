@@ -1,5 +1,5 @@
-# Avance del código Hito 2
-## Tareas desarrolladas
+## Avance del código Hito 2 :climbing:
+### Tareas desarrolladas
 En este hito se han llevado a cabo las siguientes tareas de desarrollo (referenciadas a su correpondiente issue):
 - Conexión del backend con la base de datos MySql [#14](https://github.com/Josejc2001/MUII_CC-23-24/issues/14)
 - Implementación de la capa de dominio de los jugadores [#15](https://github.com/Josejc2001/MUII_CC-23-24/issues/15)
@@ -11,7 +11,7 @@ Estas tareas se han implementado siguiendo la metodología TDD, anteriormente ex
 
 Dando lugar también a la finalización del [Hito 2: Gestión de jugadores](https://github.com/Josejc2001/MUII_CC-23-24/milestone/2) y la [[HU-1] Organizador de jugadores](https://github.com/Josejc2001/MUII_CC-23-24/issues/1).
 
-## Endpoints
+### Endpoints
 Se han definido, como resultado de crear las operaciones CRUD de los jugadores, una serie de endpoints, disponibles a continuación.
 
 - [Añadir Jugador](#end-point-añadir-jugador)
@@ -20,13 +20,13 @@ Se han definido, como resultado de crear las operaciones CRUD de los jugadores, 
 - [Modificar jugador](#end-point-modificar-jugador)
 - [Borrar jugador](#end-point-borrar-jugador)
 
-### End-point: Añadir jugador
+#### End-point: Añadir jugador
 
-#### Método: POST
+##### Método: POST
 >```
 >http://localhost:8080/api/players
 >```
-#### Body Petición
+##### Body Petición
 ``` json
 {
     "name": "Joselito",
@@ -42,13 +42,13 @@ Se han definido, como resultado de crear las operaciones CRUD de los jugadores, 
 ```
 
 ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃
-### End-point: Consultar jugadores
+#### End-point: Consultar jugadores
 
-#### Método: GET
+##### Método: GET
 >```
 >http://localhost:8080/api/players
 >```
-#### Respuesta
+##### Respuesta
 ``` json
 {
     "playersRetrieveByIdResponse": [
@@ -91,14 +91,14 @@ Se han definido, como resultado de crear las operaciones CRUD de los jugadores, 
 }
 ```
 ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃
-### End-point: Modificar jugador
+#### End-point: Modificar jugador
 
-#### Método: PATCH
+##### Método: PATCH
 >```
 >http://localhost:8080/api/players/{playerId}
 >playerId es de tipo Long
 >```
-#### Body Petición
+##### Body Petición
 ``` json
 {
     "name": "Joselito Modificado",
@@ -114,9 +114,9 @@ Se han definido, como resultado de crear las operaciones CRUD de los jugadores, 
 ```
 
 ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃
-### End-point: Borrar jugador
+#### End-point: Borrar jugador
 
-#### Método: DELETE
+##### Método: DELETE
 >```
 >http://localhost:8080/api/players/{playerId}
 >playerId es de tipo Long
