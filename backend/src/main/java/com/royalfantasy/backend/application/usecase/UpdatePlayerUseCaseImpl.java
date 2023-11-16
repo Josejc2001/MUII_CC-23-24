@@ -14,6 +14,18 @@ public class UpdatePlayerUseCaseImpl implements UpdatePlayerUseCase {
 
     @Override
     public Player updatePlayer(Long id, UpdatePlayerAction action) {
-        return null;
+        Player player = Player.Builder.newBuilder()
+                .id(action.getId())
+                .name(action.getName())
+                .position(action.getPosition())
+                .age(action.getAge())
+                .height(action.getHeight())
+                .weight(action.getWeight())
+                .value(action.getValue())
+                .clause(action.getClause())
+                .points(action.getPoints())
+                .team(action.getTeam())
+                .build();
+        return playerRepositoryPort.update(player);
     }
 }

@@ -12,6 +12,6 @@ public class DeletePlayerUseCaseImpl implements DeletePlayerUseCase {
 
     @Override
     public boolean deletePlayer(Long id) {
-        return false;
+        return playerRepositoryPort.deleteById(id);
     }
 }

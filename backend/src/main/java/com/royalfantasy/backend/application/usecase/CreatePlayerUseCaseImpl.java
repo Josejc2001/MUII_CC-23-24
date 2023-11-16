@@ -14,6 +14,17 @@ public class CreatePlayerUseCaseImpl implements CreatePlayerUseCase {
 
     @Override
     public Player createPlayer(CreatePlayerAction action) {
-        return null;
+        Player player = Player.Builder.newBuilder()
+                .name(action.getName())
+                .position(action.getPosition())
+                .age(action.getAge())
+                .height(action.getHeight())
+                .weight(action.getWeight())
+                .value(action.getValue())
+                .clause(action.getClause())
+                .points(action.getPoints())
+                .team(action.getTeam())
+                .build();
+        return playerRepositoryPort.save(player);
     }
 }

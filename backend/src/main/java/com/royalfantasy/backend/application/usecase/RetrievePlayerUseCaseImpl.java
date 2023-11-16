@@ -15,11 +15,11 @@ public class RetrievePlayerUseCaseImpl implements RetrievePlayerUseCase {
 
     @Override
     public Player getPlayer(Long id) {
-        return null;
+        return playerRepositoryPort.findById(id).orElse(null);
     }
 
     @Override
     public List<Player> getAllPlayers() {
-        return null;
+        return playerRepositoryPort.findAll();
     }
 }
