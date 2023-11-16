@@ -53,5 +53,11 @@ Para testear el front-end de nuestro sistema, utilizaremos Cypress. Este framewo
 Al igual que JUnit, Cypress permite la creación de pruebas unitarias, de integración y extremo a extremo. Se va a utilizar este framework porque está diseñado especialmente para manejar uno de los frameworks de JavaScript modernos, como es Angular, framework que utilizaremos en el desarrollo de la parte frontal de nuestro sistema.
 
 ## Bibliotecas de aserciones
+En primer lugar, tenemos JUnit que dispone de una biblioteca de aserciones ya disponible y las distintas opciones que ofrece son las siguientes:
+![JUnit assert](../imgs/junit-assert.png)
+> La imagen ha sido extraida de la siguiente página: https://www.nestoralmeida.com/testing-con-junit-4/
 
+En cuanto Cypress, dispone también de las aserciones que se pueden apreciar en la imagen siguiente.
 
+![Cypress assert](../imgs/cypress-assert.png)
+> La imagen ha sido extraida de la siguiente página: https://es.lambdageeks.com/cypress-assertion/?utm_content=cmp-true
