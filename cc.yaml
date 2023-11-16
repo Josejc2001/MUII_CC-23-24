@@ -1,1 +1,5 @@
-entidad: ../backend/src/main/java/com/royalfantasy/backend/domain/model/Player.java
+lenguaje: java
+
+test: ../backend/src/test/java/com/royalfantasy/backend/player/*
+
+fichero_tareas: 

@@ -6,6 +6,7 @@ Los contenidos de este hito serán los siguientes:
 - [Gestores de tareas](#gestores-de-tareas)
 - [Marcos de pruebas](#marcos-de-pruebas)
 - [Bibliotecas de aserciones](#bibliotecas-de-aserciones)
+- [Documentación adicional](#documentación-adicional)
 
 ## Gestores de tareas
 Para llevar a cabo la realización de este proyecto, se escogerá [Maven](https://maven.apache.org/) como gestor de tareas del backend y [NPM](https://www.npmjs.com/) como gestor de tareas del frontend. Estos gestores de tareas han sido escogidos por su facilidad de uso y su integración en los frameworks utilizados.
@@ -61,3 +62,7 @@ En cuanto Cypress, dispone también de las aserciones que se pueden apreciar en 
 
 ![Cypress assert](../imgs/cypress-assert.png)
 > La imagen ha sido extraida de la siguiente página: https://es.lambdageeks.com/cypress-assertion/?utm_content=cmp-true
+
+## Documentación adicional
+- [Avance del código en este hito](../hitos/hito2-1.md)
+- [Configuración Spring y Maven para los tests](../hitos/hito2-2.md)
