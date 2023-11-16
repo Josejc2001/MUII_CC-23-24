@@ -4,11 +4,13 @@ import com.royalfantasy.backend.domain.model.Player;
 import com.royalfantasy.backend.infrastructure.repository.mapper.PlayerEntityMapper;
 import com.royalfantasy.backend.infrastructure.repository.mapper.PlayerMapper;
 import com.royalfantasy.backend.port.out.PlayerRepositoryPort;
+import org.springframework.stereotype.Component;
 
 import java.util.List;
 import java.util.Optional;
 import java.util.stream.Collectors;
 
+@Component
 public class JpaPlayerRepositoryAdapter implements PlayerRepositoryPort {
     private final JpaPlayerRepository jpaPlayerRepository;
 
