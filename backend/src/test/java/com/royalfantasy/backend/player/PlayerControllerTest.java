@@ -1,44 +1,68 @@
 package com.royalfantasy.backend.player;
 
-import com.royalfantasy.backend.domain.record.Player;
-import com.royalfantasy.backend.infrastructure.rest.controller.PlayerController;
-import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc;
-import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;
+import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.http.MediaType;
 import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.test.web.servlet.request.MockMvcRequestBuilders;
+import org.springframework.test.web.servlet.result.MockMvcResultMatchers;
 
-import java.util.ArrayList;
-import java.util.List;
-
-import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
-
-@WebMvcTest(PlayerController.class)
+@SpringBootTest
 @AutoConfigureMockMvc
 public class PlayerControllerTest {
     @Autowired
-    MockMvc mockMvc;
+    private MockMvc mockMvc;
 
-    List<Player> players = new ArrayList<>();
-
-    @BeforeEach
-    void setUp() {
-        // create some players
-        players = List.of(
-                new Player((long)1,"Jose", "MC", 22, 1.72, 70.4, 25000000, 50000000, 50, "Real Madrid CF"),
-                new Player((long)2,"Pepe", "DC", 30, 1.90, 82.4, 27000000, 52000000, 70, "FC Barcelona")
-        );
-    }
-
-    // REST API
-
-    // list
     @Test
-    void shouldFindAllPlayers() throws Exception {
-        mockMvc.perform(MockMvcRequestBuilders.get("/api/players"))
-                .andExpect(status().isOk());
+    public void test_createPlayer() throws Exception{
+        mockMvc.perform(MockMvcRequestBuilders.post("/api/players")
+                        .content("{\"name\": \"Jugador test\"}")
+                        .contentType(MediaType.APPLICATION_JSON))
+                .andExpect(MockMvcResultMatchers.status().isCreated())
+                .andExpect(MockMvcResultMatchers
+                        .content()
+                        .contentTypeCompatibleWith(MediaType.APPLICATION_JSON));
     }
+
+    @Test
+    public void test_getPlayer() throws Exception{
+        mockMvc.perform(MockMvcRequestBuilders.get("/api/players/{playerId}", "1")
+                        .contentType(MediaType.APPLICATION_JSON))
+                .andExpect(MockMvcResultMatchers.status().isOk())
+                .andExpect(MockMvcResultMatchers
+                        .content()
+                        .contentTypeCompatibleWith(MediaType.APPLICATION_JSON));
+    }
+    @Test
+    public void test_getPlayers() throws Exception{
+        mockMvc.perform(MockMvcRequestBuilders.get("/api/players")
+                        .contentType(MediaType.APPLICATION_JSON))
+                .andExpect(MockMvcResultMatchers.status().isOk())
+                .andExpect(MockMvcResultMatchers
+                        .content()
+                        .contentTypeCompatibleWith(MediaType.APPLICATION_JSON));
+    }
+
+    @Test
+    public void test_updatePlayer() throws Exception{
+        mockMvc.perform(MockMvcRequestBuilders.patch("/api/players/{playerId}", "2")
+                        .content("{ \"name\": \"Player test updated\"}")
+                        .contentType(MediaType.APPLICATION_JSON))
+                .andExpect(MockMvcResultMatchers.status().isOk())
+                .andExpect(MockMvcResultMatchers
+                        .content()
+                        .contentTypeCompatibleWith(MediaType.APPLICATION_JSON));
+    }
+
+    @Test
+    public void test_deleteProject() throws Exception{
+        mockMvc.perform(MockMvcRequestBuilders.delete("/api/players/{playerId}", "3")
+                        .contentType(MediaType.APPLICATION_JSON))
+                .andExpect(MockMvcResultMatchers.status().isNoContent());
+    }
+
+
 
 }
