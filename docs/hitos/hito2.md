@@ -48,7 +48,9 @@ Como ya se ha mencionado anteriormente, JUnit será el marco de pruebas que util
 Además, JUnit dispone de distintas funcionalidades para realizar tanto pruebas unitarias como pruebas de integración. Por esto, y la fácil integración con Spring he decidido utilizar este framework de pruebas.
 
 ### Cypress
+Para testear el front-end de nuestro sistema, utilizaremos Cypress. Este framework es un componente de código abierto que nos brinda la posibilidad de escribir pruebas automatizadas de una manera eficiente, rápida, confiable y muy sencilla.
 
+Al igual que JUnit, Cypress permite la creación de pruebas unitarias, de integración y extremo a extremo. Se va a utilizar este framework porque está diseñado especialmente para manejar uno de los frameworks de JavaScript modernos, como es Angular, framework que utilizaremos en el desarrollo de la parte frontal de nuestro sistema.
 
 ## Bibliotecas de aserciones
 
