@@ -9,7 +9,7 @@ En este hito se han llevado a cabo las siguientes tareas de desarrollo (referenc
 
 Estas tareas se han implementado siguiendo la metodología TDD, anteriormente explicada, generando así unos ficheros de Test disponibles [aquí](../../backend/src/test/java/com/royalfantasy/backend/).
 
-Dando lugar también el desarrollo de tareas a la finalización del [Hito 2: Gestión de jugadores](https://github.com/Josejc2001/MUII_CC-23-24/milestone/2) y la [[HU-1] Organizador de jugadores](https://github.com/Josejc2001/MUII_CC-23-24/issues/1).
+Dando lugar también a la finalización del [Hito 2: Gestión de jugadores](https://github.com/Josejc2001/MUII_CC-23-24/milestone/2) y la [[HU-1] Organizador de jugadores](https://github.com/Josejc2001/MUII_CC-23-24/issues/1).
 
 ## Endpoints
 Se han definido, como resultado de crear las operaciones CRUD de los jugadores, una serie de endpoints, disponibles a continuación.
