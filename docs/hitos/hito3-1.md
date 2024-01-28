@@ -49,6 +49,24 @@ COPY src ./src
 CMD ["./mvnw", "test"]
 ```
 
+### Justificación de elección del contenedor base
+Para escoger el mejor contenedor base para este proyecto, concretamente para la ejecución de los test, tendremos en cuenta las siguientes características:
+- **Tamaño de las imágenes**
+- **Tiempo de ejecución**
+
+En cuanto al tamaño de las imágenes, se puede observar en la siguiente imagen:
+
+![Tam images docker](../imgs/images-docker-tam.png)
+
+Se puede apreciar como la imagen que tiene como base un Alpine Linux, es más ligera que la que contiene como base un Ubuntu focal.
+
+Para ver quien se lleva el veredicto final, se ha comprobado el tiempo que tarda en ejecutarse un contenedor construido a partir de la imagen de Alpine Linux y otro de la imagen de Ubuntu focal de la siguiente forma:
+
+![Time container alpine](../imgs/test-alpine-runtime.png)
+
+![Time container focal](../imgs/test-focal-runtime.png)
+
+Como se puede observar los tiempos de ejecución son muy similares, así que tomaremos como base el contenedor construido a partir de la imagen de  **Alpine Linux**.
 
 
 
