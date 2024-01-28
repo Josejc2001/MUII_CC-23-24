@@ -13,6 +13,8 @@ Ubuntu Focal es una distribución de propósito general y esta imagen proporcion
 #### Construcción de Dockerfile
 El Dockerfile construido consiste en cargar la imagen base, establecer el directorio de trabajo, copiar los archivos relacionados con Maven, descargar las dependencias de Maven necesarias, copiar el código fuente de la aplicación y por último, ejecutar el comando para ejecutar los tests.
 
+Un problema que ha surgido entre tener el contenedor en local a tenerlo publicado en dockerhub, es que había que añadir permisos de ejecución de forma manual al script **mvnw**. A continuación se puede ver el dockerfile actualizado para que funcione de forma correcta
+
 ```Dockerfile
 FROM eclipse-temurin:17-jdk-focal
 
