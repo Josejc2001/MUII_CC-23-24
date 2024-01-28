@@ -58,7 +58,7 @@ Posteriormente, se define un único **job** que se ejecutará sobre la máquina 
 
 ```
 - name: Run docker tests
-        run: docker run josejc01/contenedor-test-alpine
+        run: docker run -t -v `pwd`:/app/test josejc01/contenedor-test-alpine
 ```
 
 Para finalizar este proceso, se puede observar como en nuestro DockerHub está publicada correctamente la imagen.
