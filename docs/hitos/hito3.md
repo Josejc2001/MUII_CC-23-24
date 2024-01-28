@@ -4,4 +4,4 @@
 ## Contenidos
 Los contenidos de este hito serán los siguientes:
 - [Elección del contenedor base](./hito3-1.md)
-- [Documentación acerca Docker Hub](hito3-2.md)
+- [Subida a DockerHub](hito3-2.md)

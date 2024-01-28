@@ -1,7 +1,7 @@
 ## Subida de contenedor a DockerHub
 Tras la construcción del contenedor en local, vamos a realizar la subida a DockerHub, repositorio de imágenes docker que nos permitirá compartir las imágenes construidas.
 
-Para realizar esta subida de forma automática, se ha implementado un [Workflow](../../.github/workflows/docker.yml) actualizar la imagen del contenedor alojado en Docker Hub.
+Para realizar esta subida de forma automática, se ha implementado un [Workflow](../../.github/workflows/docker.yml) actualizar la imagen del contenedor alojado en DockerHub.
 
 ### Explicación del Workflow
 En primer lugar, se lanzará cada vez que se realiza un _push_ sobre la rama principal, en esta caso sobre la rama _main_, lo cual se indica mediante las siguientes instrucciones:
@@ -63,6 +63,7 @@ Posteriormente, se define un único **job** que se ejecutará sobre la máquina 
 
 Para finalizar este proceso, se puede observar como en nuestro DockerHub está publicada correctamente la imagen.
 
+![Contenedor dockerhub](../imgs/contenedor-dockerhub.png)
 
 
 
