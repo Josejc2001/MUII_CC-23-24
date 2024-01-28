@@ -22,7 +22,7 @@ jobs:
         id: meta
         uses: docker/metadata-action@v3
         with:
-          images: contenedor-test-alpine
+          images: josejc01/contenedor-test-alpine
           tags: latest
 
       - name: Build and push Docker image
@@ -34,4 +34,4 @@ jobs:
           labels: ${{ steps.meta.outputs.labels }}
 
       - name: Run docker tests
-        run: docker run contenedor-test-alpine
+        run: docker run josejc01/contenedor-test-alpine
