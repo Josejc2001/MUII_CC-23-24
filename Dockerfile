@@ -4,7 +4,7 @@ WORKDIR /backend
 
 COPY ../backend/.mvn/ .mvn
 COPY ../backend/mvnw ../backend/pom.xml ./
-RUN ./mvnw dependency:go-offline
+RUN ./backend/mvnw dependency:go-offline
 
 COPY ../backend/src ./src
 
