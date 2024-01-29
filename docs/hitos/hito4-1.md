@@ -11,8 +11,14 @@ Las distintas alternativas tomadas en consideración para implementar un proceso
 - [GitHub Actions](#github-actions)
 
 ### Jenkins
+Esta herramienta permite la automatización de código abierto para la integración continua en el desarrollo de software. Su principal objetivo es automatizar los procesos repetitibos en el ciclo de vida del desarrollo de software, permitiendo la construcción, prueba y despliegue automáticos de aplicaciones.
+
+Jenkins es versátil y puede integrarse con una amplia gama de tecnologías y lenguajes de programación, incluye Java, que es en el lenguaje que nos interesa principalmente. También permite la integración con GitHub a través de plugings.
+
+A pesar de estas ventajas, se ha optado por otra herramienta que posee una curva de aprendizaje más suavizada y no es necesario lidiar con los problemas que pueden generar los plugins
 
 ### Travis CI
+
 
 ### Circle CI
 
