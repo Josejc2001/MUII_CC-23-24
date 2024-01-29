@@ -25,6 +25,16 @@ La configuración de este servicio se hace mediante archivos YAML, que simplific
 Es una herramienta bastante potente, pero tampoco va a ser elegido como el sistema implementado ya que es un servicio de pago y el plan gratuito tiene ciertas limitaciones que no benefician a la implementación de integración continua sobre este proyecto.
 
 ### Circle CI
+Circle CI es un servicio de Integración Continua (CI) y despliegue continuo (CD) en la nube que permite a los equipos automatizar el proceso de construcción, prueba y despliegue de sus aplicaciones.
+
+Al igual que Travis CI, la configuración de flujos de trabajo ser realiza a través de archivos YAML en el repositorio, que nos permite una forma sencilla y estructurada de definir las tareas de construcción y despliegue. Como las anteriores mostradas, ofrece un soporte multiplataforma extenso junto con la integración sencilla de GitHub.
+
+Este será el primer sistema CI que utilizaremos porque además de ser sencillo, con fácil integración y eficiente, ofrece una característica que el resto no ofrecen, la cual son los "orbs" que son paquetes reutilizables de configuración que simplifican la implementación de tareas comunes y mejoran la modularidad del trabajo.
+
+Para comenzar con la implementación de Circle CI, debemos registrarnos en el servicio y realizar la conexión con el repositorio de GitHub que contiene nuestro proyecto.
+
+
+
 
 ### GitHub Actions
 

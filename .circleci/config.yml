@@ -1,0 +1,14 @@
+version: 1.0
+
+jobs:
+  test:
+    docker:
+      - image: josejc2001/muii_cc-23-24:latest
+    steps:
+      - checkout
+      - name: Running tests...
+      - run: ./mvnw test
+workflows:
+  test_project:
+    jobs:
+      - test
