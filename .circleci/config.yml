@@ -3,7 +3,7 @@ version: 2.1
 jobs:
   test:
     docker:
-      - image: josejc2001/muii_cc-23-24:latest
+      - image: josejc01/vontenedor-test-alpine:latest
     steps:
       - checkout
       - run: ./mvnw test
