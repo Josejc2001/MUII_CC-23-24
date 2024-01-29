@@ -3,7 +3,7 @@ version: 2.1
 jobs:
   test:
     docker:
-      - image: josejc01/vontenedor-test-alpine:latest
+      - image: josejc01/contenedor-test-alpine:latest
     steps:
       - checkout
       - run: ./mvnw test
