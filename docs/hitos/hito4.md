@@ -5,3 +5,4 @@
 Los contenidos de este hito serán los siguientes:
 - [Integración continua](./hito4-1.md)
 - [Fichero de configuración CircleCI](../../.circleci/config.yml)
+- [Fichero de configuración GitHub Actions](../../.github/workflows/github-actions.yml)

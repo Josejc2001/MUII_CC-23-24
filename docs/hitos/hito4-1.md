@@ -65,4 +65,36 @@ A modo de curiosidad, para evitar cargar este mecanismo en cada commit que hagam
 ![skip-circle-ci](../imgs/skip-circleci.png)
 
 ### GitHub Actions
+Para complementar la herramienta anterior, se ha usado **GitHub Actions** como servicio de integración continua y entrega continua integrado directamente en la plataforma GitHub.
+
+La configuración de esta herramienta se hace mediante archivos YAML, donde se definen los flujos de trabajo. Como ventaja de usar esta herramienta, es el marketplace que ofrece donde podemos encontrar una serie de acciones predefinidas y personalizadas creadas por la comunidad.
+
+En el hito anterior ya usamos esta herramienta para automatizar la subida del contenedor de pruebas a DockerHub y a GitHub Container Registry. El objetivo de usarla en este hito es que nos permita, además de seguir con las buenas prácticas del hito anterior, tener un control total del proceso de integración continua.
+
+Para ello, se ha definido el workflow que se puede ver a continuación o pulsando [aquí](../../.github/workflows/github-actions.yml).
+
+```
+name: Run Tests
+
+on:
+  workflow_run:
+    workflows: ["GitHub Container Registry"]
+    branches: [main]
+    types:
+      - completed
+
+jobs:
+  run_test:
+    runs-on: ubuntu-latest
+    if: ${{ github.event.workflow_run.conclusion == 'success' }}
+    steps:
+      - uses: actions/checkout@v2
+      - name: Lanzar Tests CI
+        run:
+          docker run -t -v `pwd`:/app/test josejc01/contenedor-test-alpine
+```
+
+Este fichero se ha hecho de forma similar a los anteriores, lo único que se ha hecho que el workflow de lanzar los tests depende de la action que nos permite subir el contenedor a DockerHub y a GitHub Container Registry.
+
+Y solo será ejecutada esta actión de lanzar los test, en el caso de que la subida del contenedor de pruebas se haya hecho correctamente, como buena práctica.
 
