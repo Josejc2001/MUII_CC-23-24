@@ -1,0 +1,14 @@
+version: 2.1
+
+jobs:
+  test:
+    docker:
+      - image: josejc01/contenedor-test-alpine:latest
+    steps:
+      - checkout
+      - run: cd backend && chmod +x mvnw
+      - run: cd backend && ./mvnw test
+workflows:
+  run_test:
+    jobs:
+      - test
