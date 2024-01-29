@@ -51,7 +51,6 @@ workflows:
     jobs:
       - test
 ```
-
 Este fichero se compone del trabajo que se realiza cada vez que se realiza un push en cualquier rama. Primero se obtiene la imagen que queremos emplear, disponible en DockerHub. Después, se llevan a cabo los pasos específicados en el fichero como **steps**. Los pasos son hacer checkout, ejecutar el primer comando deseado que nos permitirá darle permisos de ejecución al fichero que nos interesa y ejecutar el segundo comando para ejecutar los tests.
 
 Como podremos apreciar en las siguientes imágenes, se ha conseguido el objetivo de ejecutar los tests cada vez que realizamos cambios en el repositorio.
