@@ -17,3 +17,6 @@ En el siguiente enlace se puede acceder al [Hito 2](/docs/hitos/hito2.md) en el 
 
 ### Hito 3: Docker :pushpin::whale:
 En el siguiente enlace se puede acceder al [Hito 3](/docs/hitos/hito3.md) en el cual se definen la elección y justificación del contenedor base y la creación del archivo Dockerfile siguiendo las buenas prácticas y adaptándolo de manera correcta a las clases y módulos del proyecto. Además, se proporciona la documentación asociada tanto a la subida del contendor a DockerHub como a la actualización automática así como el uso de registros alternativos y públicos como GitHub Container Registry.
+
+### Hito 4: CI :pushpin::repeat:
+En el siguiente enlace se puede acceder al [Hito 4](/docs/hitos/hito4.md) en el cual definen la elección y justificación de los distintos sistemas de integración continua así como la configuración de algunos de ellos.
