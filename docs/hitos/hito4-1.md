@@ -60,5 +60,9 @@ Como podremos apreciar en las siguientes imágenes, se ha conseguido el objetivo
 
 ![circle-ci-test](../imgs/circle-ci-2.png)
 
+A modo de curiosidad, para evitar cargar este mecanismo en cada commit que hagamos en nuestro repositorio, existe la opción **[skip ci]** la cual nos permite no ejecutar este sistema de integración continua.
+
+![skip-circle-ci](../imgs/skip-circleci.png)
+
 ### GitHub Actions
 
