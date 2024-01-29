@@ -98,3 +98,5 @@ Este fichero se ha hecho de forma similar a los anteriores, lo único que se ha 
 
 Y solo será ejecutada esta actión de lanzar los test, en el caso de que la subida del contenedor de pruebas se haya hecho correctamente, como buena práctica.
 
+![run-test-gha](../imgs/run-test-gha.png)
+
