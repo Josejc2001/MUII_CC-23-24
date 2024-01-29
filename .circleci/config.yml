@@ -7,7 +7,7 @@ jobs:
     steps:
       - checkout
       - run: chmod +x mvnw
-      - cmd: ./mvnw test
+      - run: ./mvnw test
 workflows:
   test_project:
     jobs:
