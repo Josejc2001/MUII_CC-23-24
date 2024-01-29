@@ -9,6 +9,6 @@ jobs:
       - run: cd backend && chmod +x mvnw
       - run: cd backend && ./mvnw test
 workflows:
-  test_project:
+  run_test:
     jobs:
       - test
