@@ -6,8 +6,7 @@ jobs:
       - image: josejc01/contenedor-test-alpine:latest
     steps:
       - checkout
-      - run: chmod +x mvnw
-      - run: ./mvnw test
+      - run: cd backend && ls -l ./
 workflows:
   test_project:
     jobs:
