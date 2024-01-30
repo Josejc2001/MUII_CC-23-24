@@ -21,3 +21,7 @@ diferenciadas:
 - **Capa de puertos:** Como ya se ha mencionado anteriormente, esta capa define las interfaces a través de las cuáles el sistema se comunica con el exterior.
 
 ### Endpoints
+En el hito 2, se definieron los primeros endpoints y rutas que cubrian la [[HU-1] Organizador de jugadores](https://github.com/Josejc2001/MUII_CC-23-24/issues/1).
+
+A continuación, vamos a explicar las nuevas rutas añadidas para darle valor a nuestro sistema.
+
