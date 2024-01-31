@@ -98,3 +98,34 @@
         p1_0.weight 
     from
         player p1_0
+2024-01-31T12:10:34.376+01:00  INFO 5364 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-01-31T12:10:34.381+01:00  INFO 5364 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-01-31T12:10:34.405+01:00  INFO 5364 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-01-31T12:16:22.144+01:00  INFO 8692 --- [main] m.p.springdotenv.DotenvPropertySource    : Initializing Dotenv with DotenvConfig{directory=null, filename=null, ignoreIfMalformed=false, ignoreIfMissing=true, systemProperties=false, prefix=null}
+2024-01-31T12:16:22.166+01:00  INFO 8692 --- [main] c.r.backend.BackendApplication           : Starting BackendApplication using Java 17.0.3 with PID 8692 (C:\Users\josej\Desktop\universidad\master\1ºcuatri\CC\MUII_CC-23-24\backend\target\classes started by josej in C:\Users\josej\Desktop\universidad\master\1ºcuatri\CC\MUII_CC-23-24\backend)
+2024-01-31T12:16:22.168+01:00  INFO 8692 --- [main] c.r.backend.BackendApplication           : No active profile set, falling back to 1 default profile: "default"
+2024-01-31T12:16:23.075+01:00  INFO 8692 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-01-31T12:16:23.170+01:00  INFO 8692 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 86 ms. Found 2 JPA repository interfaces.
+2024-01-31T12:16:23.922+01:00  INFO 8692 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2024-01-31T12:16:23.937+01:00  INFO 8692 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-01-31T12:16:23.937+01:00  INFO 8692 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.15]
+2024-01-31T12:16:24.046+01:00  INFO 8692 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-01-31T12:16:24.046+01:00  INFO 8692 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1817 ms
+2024-01-31T12:16:24.190+01:00  INFO 8692 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-01-31T12:16:24.253+01:00  INFO 8692 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.13.Final
+2024-01-31T12:16:24.256+01:00  INFO 8692 --- [main] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2024-01-31T12:16:24.571+01:00  INFO 8692 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-01-31T12:16:24.619+01:00  INFO 8692 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-01-31T12:16:24.771+01:00  INFO 8692 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6ba6557e
+2024-01-31T12:16:24.773+01:00  INFO 8692 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-01-31T12:16:24.833+01:00  WARN 8692 --- [main] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-01-31T12:16:24.834+01:00  WARN 8692 --- [main] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2024-01-31T12:16:25.884+01:00  INFO 8692 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-01-31T12:16:25.938+01:00  INFO 8692 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-01-31T12:16:26.530+01:00  WARN 8692 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-01-31T12:16:26.874+01:00  INFO 8692 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@1c41931a, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@62cb977a, org.springframework.security.web.context.SecurityContextHolderFilter@41831611, org.springframework.security.web.header.HeaderWriterFilter@103033fe, org.springframework.security.web.authentication.logout.LogoutFilter@5cff6d1d, com.royalfantasy.backend.application.service.jwt.JwtFilter@ed1d2cf, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5749e633, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5570ee6d, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7db70494, org.springframework.security.web.session.SessionManagementFilter@7c919e1e, org.springframework.security.web.access.ExceptionTranslationFilter@67683210, org.springframework.security.web.access.intercept.AuthorizationFilter@3b28ab9b]
+2024-01-31T12:16:27.156+01:00  INFO 8692 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2024-01-31T12:16:27.167+01:00  INFO 8692 --- [main] c.r.backend.BackendApplication           : Started BackendApplication in 5.694 seconds (process running for 6.55)
+2024-01-31T12:19:44.951+01:00  INFO 8692 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-01-31T12:19:44.955+01:00  INFO 8692 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-01-31T12:19:44.965+01:00  INFO 8692 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
