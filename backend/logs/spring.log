@@ -343,3 +343,53 @@ io.jsonwebtoken.ExpiredJwtException: JWT expired at 2024-01-31T11:28:28Z. Curren
 2024-01-31T19:01:48.404+01:00  INFO 9524 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
 2024-01-31T19:01:48.406+01:00  INFO 9524 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
 2024-01-31T19:01:48.413+01:00  INFO 9524 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-01-31T21:33:02.467+01:00  INFO 9996 --- [main] m.p.springdotenv.DotenvPropertySource    : Initializing Dotenv with DotenvConfig{directory=null, filename=null, ignoreIfMalformed=false, ignoreIfMissing=true, systemProperties=false, prefix=null}
+2024-01-31T21:33:02.489+01:00  INFO 9996 --- [main] c.r.backend.BackendApplication           : Starting BackendApplication using Java 17.0.3 with PID 9996 (C:\Users\josej\Desktop\universidad\master\1ºcuatri\CC\MUII_CC-23-24\backend\target\classes started by josej in C:\Users\josej\Desktop\universidad\master\1ºcuatri\CC\MUII_CC-23-24\backend)
+2024-01-31T21:33:02.491+01:00  INFO 9996 --- [main] c.r.backend.BackendApplication           : No active profile set, falling back to 1 default profile: "default"
+2024-01-31T21:33:03.659+01:00  INFO 9996 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-01-31T21:33:03.804+01:00  INFO 9996 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 130 ms. Found 2 JPA repository interfaces.
+2024-01-31T21:33:04.758+01:00  INFO 9996 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2024-01-31T21:33:04.773+01:00  INFO 9996 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-01-31T21:33:04.774+01:00  INFO 9996 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.15]
+2024-01-31T21:33:04.914+01:00  INFO 9996 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-01-31T21:33:04.914+01:00  INFO 9996 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2356 ms
+2024-01-31T21:33:05.122+01:00  INFO 9996 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-01-31T21:33:05.212+01:00  INFO 9996 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.13.Final
+2024-01-31T21:33:05.216+01:00  INFO 9996 --- [main] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2024-01-31T21:33:05.664+01:00  INFO 9996 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-01-31T21:33:05.708+01:00  INFO 9996 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-01-31T21:33:05.957+01:00  INFO 9996 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@53e93fb7
+2024-01-31T21:33:05.960+01:00  INFO 9996 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-01-31T21:33:06.031+01:00  WARN 9996 --- [main] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-01-31T21:33:06.033+01:00  WARN 9996 --- [main] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2024-01-31T21:33:07.405+01:00  INFO 9996 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-01-31T21:33:07.481+01:00  INFO 9996 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-01-31T21:33:08.096+01:00  WARN 9996 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-01-31T21:33:08.453+01:00  INFO 9996 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@241abc2, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7e5e7753, org.springframework.security.web.context.SecurityContextHolderFilter@62878d7c, org.springframework.security.web.header.HeaderWriterFilter@58a9e64d, org.springframework.security.web.authentication.logout.LogoutFilter@17873842, com.royalfantasy.backend.application.service.jwt.JwtFilter@2fccd98f, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@e0f2686, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@bddac1c, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@11678469, org.springframework.security.web.session.SessionManagementFilter@755a90a6, org.springframework.security.web.access.ExceptionTranslationFilter@105cdf61, org.springframework.security.web.access.intercept.AuthorizationFilter@3c981f76]
+2024-01-31T21:33:08.825+01:00  INFO 9996 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2024-01-31T21:33:08.837+01:00  INFO 9996 --- [main] c.r.backend.BackendApplication           : Started BackendApplication in 7.099 seconds (process running for 8.322)
+2024-01-31T21:43:16.950+01:00  INFO 9996 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-01-31T21:43:16.951+01:00  INFO 9996 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-01-31T21:43:16.956+01:00  INFO 9996 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
+2024-01-31T21:43:17.450+01:00 DEBUG 9996 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        u1_0.id,
+        u1_0.email,
+        u1_0.password,
+        u1_0.role,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.username=?
+2024-01-31T21:43:17.621+01:00 DEBUG 9996 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        u1_0.id,
+        u1_0.email,
+        u1_0.password,
+        u1_0.role,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.username=?
