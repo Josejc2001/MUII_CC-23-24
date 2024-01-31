@@ -13,6 +13,10 @@ import { PlayerInterceptor } from './interceptors/player.interceptor';
 import { FormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { ToastrModule } from 'ngx-toastr';
+import { CreatePlayerComponent } from './player/create-player/create-player.component';
+import { DetailPlayerComponent } from './player/detail-player/detail-player.component';
+import { ListPlayerComponent } from './player/list-player/list-player.component';
+import { UpdatePlayerComponent } from './player/update-player/update-player.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +25,11 @@ import { ToastrModule } from 'ngx-toastr';
     RegisterComponent,
     HomeComponent,
     SidenavComponent,
-    BodyComponent
+    BodyComponent,
+    CreatePlayerComponent,
+    DetailPlayerComponent,
+    ListPlayerComponent,
+    UpdatePlayerComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,51 @@
+<div class="container">
+    <div class="row mt-5">
+        <div class="col-md-4 mx-auto">
+            <form (ngSubmit)="onCreatePlayer()" novalidate #f="ngForm">
+                <h3 class="text-center">Create Player</h3>
+                <div class="mb-3">
+                    <input type="text" class="form-control" id="name" name="namePlayer" placeholder="Player name"
+                        autocomplete="off" required [(ngModel)]="namePlayer">
+                </div>
+                <div class="mb-3">
+                    <input type="text" class="form-control" id="position" name="positionPlayer" placeholder="Player positon"
+                        autocomplete="off" required [(ngModel)]="positionPlayer">
+                </div>
+                <div class="mb-3">
+                    <input type="number" class="form-control" id="age" name="agePlayer" placeholder="Player age"
+                        autocomplete="off" required [(ngModel)]="agePlayer">
+                </div>
+                <div class="mb-3">
+                    <input type="number" class="form-control" id="height" name="heightPlayer" placeholder="Player height"
+                        autocomplete="off" required [(ngModel)]="heightPlayer">
+                </div>
+                <div class="mb-3">
+                    <input type="number" class="form-control" id="weight" name="weightPlayer" placeholder="Player weight"
+                        autocomplete="off" required [(ngModel)]="weightPlayer">
+                </div>
+                <div class="mb-3">
+                    <input type="number" class="form-control" id="value" name="valuePlayer" placeholder="Player value"
+                        autocomplete="off" required [(ngModel)]="valuePlayer">
+                </div>
+                <div class="mb-3">
+                    <input type="number" class="form-control" id="clause" name="clausePlayer" placeholder="Player clause"
+                        autocomplete="off" required [(ngModel)]="clausePlayer">
+                </div>
+                <div class="mb-3">
+                    <input type="number" class="form-control" id="points" name="pointsPlayer" placeholder="Player points"
+                        autocomplete="off" required [(ngModel)]="pointsPlayer">
+                </div>
+                <div class="mb-3">
+                    <input type="text" class="form-control" id="team" name="teamPlayer" placeholder="Player team"
+                        autocomplete="off" required [(ngModel)]="teamPlayer">
+                </div>
+                <button class="btn btn-outline-success w-100 mb-3" [disabled]="!f.valid">
+                    <i class="fal fa-plus-circle"></i> Create
+                </button>
+                <button class="btn btn-outline-primary w-100" routerLink="/players">
+                    <i class="fal fa-arrow-alt-circle-left"></i> Back
+                </button>
+            </form>
+        </div>
+    </div>
+</div>

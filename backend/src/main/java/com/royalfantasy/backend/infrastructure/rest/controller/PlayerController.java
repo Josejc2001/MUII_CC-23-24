@@ -13,7 +13,6 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@RequestMapping("/api/players")
 @CrossOrigin(origins = "*")
 public class PlayerController {
     private final PlayerService playerService;
@@ -22,7 +21,7 @@ public class PlayerController {
         this.playerService = playerService;
     }
 
-    @PostMapping(value = "", produces = "application/json")
+    @PostMapping(value="/api/players", produces="application/json")
     public ResponseEntity<CreatePlayerResponse> createPlayer(@RequestBody final CreatePlayerRequest request){
         CreatePlayerAction action = CreatePlayerActionMapper.map(request);
 
@@ -35,7 +34,7 @@ public class PlayerController {
                 .body(response);
     }
 
-    @GetMapping(value = "/{playerId}", produces = "application/json")
+    @GetMapping(value="/api/players/{playerId}", produces="application/json")
     public ResponseEntity<RetrieveByIdPlayerResponse> getPlayerById(@PathVariable Long playerId){
         Player player = playerService.getPlayer(playerId);
 
@@ -44,7 +43,7 @@ public class PlayerController {
         return ResponseEntity.ok(response);
     }
 
-    @GetMapping(value = "", produces = "application/json")
+    @GetMapping(value="/api/players", produces="application/json")
     public ResponseEntity<RetrieveAllPlayerResponse> getAllPlayers(){
         List<Player> players = playerService.getAllPlayers();
 
@@ -54,7 +53,7 @@ public class PlayerController {
         return ResponseEntity.ok(response);
     }
 
-    @PatchMapping(value = "/{playerId}", produces = "application/json")
+    @PatchMapping(value="/api/players/{playerId}", produces="application/json")
     public ResponseEntity<UpdatePlayerResponse> updatePlayer(@PathVariable Long playerId, @RequestBody UpdatePlayerRequest request){
         UpdatePlayerAction action = UpdatePlayerAction.Builder.newBuilder()
                 .id(playerId)
@@ -76,7 +75,7 @@ public class PlayerController {
         return ResponseEntity.ok(response);
     }
 
-    @DeleteMapping(value = "/{playerId}", produces = "application/json")
+    @DeleteMapping(value="/api/players/{playerId}")
     public ResponseEntity<Void> deletePlayerById(@PathVariable Long playerId){
         if(playerService.deletePlayer(playerId)){
             return new ResponseEntity<>(HttpStatus.NO_CONTENT);
