@@ -72,3 +72,5 @@ A continuación, vamos a explicar las nuevas rutas añadidas para darle valor a 
 Cabe anotar que para hacer un registro como usuario con Rol *"USER"*, simplemente habría que mandar en la petición ese campo *"ROLE"* con el valor *"USER"*.
 
 Otro aspecto importante es el token que se devuelve en las dos endpoints, ya que si este token no será posible acceder al resto de recursos que ofrece el sistema.
+
+Estos avances cubren la historia de usuario siguiente: [[HU-4] Autenticación de usuarios](https://github.com/Josejc2001/MUII_CC-23-24/issues/4).
