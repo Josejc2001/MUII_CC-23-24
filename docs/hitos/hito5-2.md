@@ -21,7 +21,54 @@ diferenciadas:
 - **Capa de puertos:** Como ya se ha mencionado anteriormente, esta capa define las interfaces a través de las cuáles el sistema se comunica con el exterior.
 
 ### Endpoints
-En el hito 2, se definieron los primeros endpoints o rutas que cubrian la [[HU-1] Organizador de jugadores](https://github.com/Josejc2001/MUII_CC-23-24/issues/1).
+En el [hito 2](../hitos/hito2-1.md), se definieron los primeros endpoints o rutas que cubrian la [[HU-1] Organizador de jugadores](https://github.com/Josejc2001/MUII_CC-23-24/issues/1).
 
 A continuación, vamos a explicar las nuevas rutas añadidas para darle valor a nuestro sistema.
+- [Registro](#end-point-registro)
+- [Inicio de sesión](#end-point-inicio-de-sesión)
 
+#### End-point: Registro
+
+##### Método: POST
+>```
+>http://localhost:8080/auth/register
+>```
+##### Body Petición
+``` json
+{
+    "username": "jose",
+    "email": "jose@gmail.com",
+    "password": "1234",
+    "role": "ADMIN"
+}
+```
+
+##### Respuesta
+```json
+{"token":"eyJhbGciOiJIUzI1NiJ9.eyJyb2xlcyI6WyJBRE1JTiJdLCJzdWIiOiJqb3NlIiwiaWF0IjoxNzA2NzE3OTE5LCJleHAiOjE3MDY3MTkzNTl9.mSdU205zkxOlMINEEpy-pcz6621ELNeamQyclZtFrYo"}
+```
+⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃
+
+#### End-point: Inicio de sesión
+
+##### Método: POST
+>```
+>http://localhost:8080/auth/login
+>```
+##### Body Petición
+``` json
+{
+    "username": "jose",
+    "password": "1234",
+}
+```
+
+##### Respuesta
+```json
+{"token":"eyJhbGciOiJIUzI1NiJ9.eyJyb2xlcyI6WyJBRE1JTiJdLCJzdWIiOiJqb3NlIiwiaWF0IjoxNzA2NzE3OTE5LCJleHAiOjE3MDY3MTkzNTl9.mSdU205zkxOlMINEEpy-pcz6621ELNeamQyclZtFrYo"}
+```
+⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃
+
+Cabe anotar que para hacer un registro como usuario con Rol *"USER"*, simplemente habría que mandar en la petición ese campo *"ROLE"* con el valor *"USER"*.
+
+Otro aspecto importante es el token que se devuelve en las dos endpoints, ya que si este token no será posible acceder al resto de recursos que ofrece el sistema.
