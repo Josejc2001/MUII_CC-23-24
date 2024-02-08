@@ -1,0 +1,44 @@
+# Docker Compose file Reference (https://docs.docker.com/compose/compose-file/)
+version: '3'
+
+#Define services
+services:
+  #Back-end Spring Boot Application
+  rf-backend:
+    build: ./backend
+
+    environment:
+      SQL_HOST: 'rf-db'
+      SQL_PORT: '3306'
+      SQL_DATABASE: 'db_royal_fantasy'
+      SQL_USERNAME: 'root'
+      SQL_PASSWORD: 'jose'
+    ports:
+      - 8080:8080
+    links:
+      - rf-db
+
+  #Front-end Angular Application
+  rf-frontend:
+    build: ./frontend
+
+    ports:
+      - 4200:4200
+    links:
+      - rf-backend
+
+  #MySQL Database for the application
+  rf-db:
+    image: mysql:5.7
+    environment:
+      MYSQL_DATABASE: 'db_royal_fantasy'
+      MYSQL_ROOT_PASSWORD: 'jose'
+    ports:
+      - '3307:3307'
+    expose:
+      - '3307'
+    volumes:
+      - my-db:/var/lib/mysql
+
+volumes:
+  my-db:
