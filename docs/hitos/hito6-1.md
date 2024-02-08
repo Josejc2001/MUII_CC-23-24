@@ -50,3 +50,24 @@ EXPOSE 4200
 # Start the application
 CMD ["npm", "run", "start"]
 ```
+
+### Contenedor base de datos
+Este contenedor se obtiene de la [imagen oficial de MySQL en DockerHub](https://hub.docker.com/_/mysql), la cual a su vez nos provee una interfaz para poder administrar y gestionar nuestra base de datos. En esta ocasión, se realizará una configuración adicional estableciendo el nombre de nuestra base de datos (mediante `MYSQL_DATABASE: 'db_royal_fantasy'`), la contraseña para acceder al root (mediante `MYSQL_ROOT_PASSWORD: 'jose'`) así como los puertos que estarán expuestos y donde correrá el servicio de MySQL, en este caso en el puerto `3307` (normalmente es sobre el 3306 pero a mi me daba problemas en local), tal y como se puede observar a continuación:
+
+```
+  #MySQL Database for the application
+  rf-db:
+    image: mysql:5.7
+    environment:
+      MYSQL_DATABASE: 'db_royal_fantasy'
+      MYSQL_ROOT_PASSWORD: 'jose'
+    ports:
+      - '3307:3307'
+    expose:
+      - '3307'
+    volumes:
+      - my-db:/var/lib/mysql
+
+volumes:
+  my-db:
+```
