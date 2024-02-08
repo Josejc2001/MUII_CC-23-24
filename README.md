@@ -1,3 +1,7 @@
+![Github Container Registry](https://github.com/Josejc2001/MUII_CC-23-24/actions/workflows/github-container-registry.yml/badge.svg)
+![Publish Docker image and run](https://github.com/Josejc2001/MUII_CC-23-24/actions/workflows/docker.yml/badge.svg)
+![Run tests](https://github.com/Josejc2001/MUII_CC-23-24/actions/workflows/github-actions.yml/badge.svg)
+
 # MUII_CC-23-24
  Repositorio para las prácticas de la asignatura Cloud Computing del Máster Universitario en Ingeniería Informática de la UGR
 
@@ -22,4 +26,7 @@ En el siguiente enlace se puede acceder al [Hito 3](/docs/hitos/hito3.md) en el 
 En el siguiente enlace se puede acceder al [Hito 4](/docs/hitos/hito4.md) en el cual se definen la elección y justificación de los distintos sistemas de integración continua así como la configuración de algunos de ellos.
 
 ### Hito 5: Microservicios :pushpin::link:
-En el siguiente enlace se puede acceder al [Hito 5](/docs/hitos/hito5.md) en el cual se se define la elección y justificación de los distintos frameworks utilizados para microservicios, se ha llevado a cabo la documentación y diseño completo de la API, se hace uso de logs mediante las funcionalidades que ofrece el framework utilizado y se implementa como extra una parte del front-end del sistema.
+En el siguiente enlace se puede acceder al [Hito 5](/docs/hitos/hito5.md) en el cual se define la elección y justificación de los distintos frameworks utilizados para microservicios, se ha llevado a cabo la documentación y diseño completo de la API, se hace uso de logs mediante las funcionalidades que ofrece el framework utilizado y se implementa como extra una parte del front-end del sistema.
+
+### Hito 6: Compose :pushpin::globe_with_meridians:
+En el siguiente enlace se puede acceder al [Hito 6](/docs/hitos/hito6.md) en el cual se define la elección y justificación del clúster de contenedores utilizados con su respectiva imagen. Además, se ha llevado a cabo la documentación y justificación de la configuración de cada uno de los contenedores que lo componen así como la documentación paso a paso del fichero de composición.
